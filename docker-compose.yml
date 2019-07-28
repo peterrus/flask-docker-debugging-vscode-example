@@ -1,0 +1,35 @@
+version: '3'
+
+# for debugging only, extend/override this file for production usage (if you are using docker-compose in production at all)
+# also see the Dockerfile
+services:
+
+  flask-app:
+    build: flask-app/
+    ports:
+      - "5000:5000" # app port
+      - "5001:5001" # app(debug) port
+      - "3000:3000" # remote debugger attach port
+    volumes:
+      - ./flask-app:/usr/src/app/
+    environment:
+      - FLASK_DEBUG=1
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      #- DATABASE_URL=mysql://root:supersecretpassword@sqldb/your_awesome_db
+    command: flask run --host 0.0.0.0 # host=0.0.0.0 to make sure you can connect through Dockers networking
+
+  # you can add more services here, see the examples below
+
+  # sqldb:
+  #   image: mariadb
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: supersecretpassword
+  #     MYSQL_DATABASE: your_awesome_db
+
+  # sqlgui:
+  #   image: adminer
+  #   ports:
+  #     - 9999:8080
+  #   environment:
+  #     - ADMINER_DEFAULT_SERVER=sqldb

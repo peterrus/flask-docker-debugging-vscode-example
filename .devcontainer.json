@@ -1,0 +1,10 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "flask-app",
+	"workspaceFolder": "/usr/src/app",
+	"extensions": [
+		"ms-python.python"
+	],
+	"shutdownAction": "stopCompose"
+}

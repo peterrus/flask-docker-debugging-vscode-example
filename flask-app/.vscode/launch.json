@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run Flask with ptvsd debugger",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "module": "flask",
+            "cwd": "${workspaceFolder}",
+            "env": {}, // you can add debug-specific envvars here
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload",
+                "--port=5001",
+                "--host=0.0.0.0"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

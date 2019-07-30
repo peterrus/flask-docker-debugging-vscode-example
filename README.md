@@ -8,7 +8,7 @@ I created this example to show others how you can achieve a development workflow
 
 - Debugging
 
-- High Dev/Prod parity (https://12factor.net/dev-prod-parity) through Docker
+- [High Dev/Prod parity](https://12factor.net/dev-prod-parity) through Docker
 
 - Ability for team members to run the entire stack with a simple `docker-compose up`
 
@@ -22,7 +22,7 @@ While creating this example I stumbled upon an incompatibility between Flask's a
 
 - Visual Studio Code (Insiders channel is required at this time of writing)
 
-- Remote Development Extension ([https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack]())
+- [Remote Development Extension]([https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack]()
 
 - Docker CE
 

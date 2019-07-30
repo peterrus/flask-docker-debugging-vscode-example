@@ -40,7 +40,7 @@ While creating this example I stumbled upon an incompatibility between Flask's a
 
 ## Running the stack
 
-Just open your local clone of this repository in VSCode using 'Open Folder' and start the development container using 'Reopen Folder in Container' in the command palette (`ctrl+shift+p` / `command+shift+p`). VSCode will now start the Docker container and move it's context into the container as if you were developing on a native local filesystem. Any spawned terminals will also live within that context, so you can do pip installs directly into the container. (Don't forget to freeze your dependencies into requirements.txt so you can commit them to version control).
+Just open your local clone of this repository in VSCode using 'Open Folder' and start the development container using 'Reopen Folder in Container' in the command palette (`ctrl+shift+p` / `command+shift+p`). VSCode will now start the Docker container and move it's context into the container as if you were developing on a native local filesystem. Any spawned terminals will also live within that context, so you can do `pip` installs directly into the container. (Don't forget to freeze your dependencies into `requirements.txt` so you can commit them to version control).
 
 As soon as the container is running you can visit [http://localhost:5000]() for further instructions.
 
@@ -71,7 +71,7 @@ I have laid out some examples in `docker-compose.yml`. Feel free to add any cont
 
 Maybe your application consists of multiple containers in which your own code runs. You might for example have several Flask applications that, together, form a single logical application. In that case you also want VSCode to be able to switch it's context into those containers and have full code hinting and debugging capabilities within those containers.
 
-Microsoft's Chuck Lantz has done a write up on that scenario [here](https://code.visualstudio.com/docs/remote/containers-advanced#_connecting-to-multiple-containers-at-once)
+Microsoft's [Chuck Lantz](https://github.com/Chuxel) has done a write up on that scenario [here](https://code.visualstudio.com/docs/remote/containers-advanced#_connecting-to-multiple-containers-at-once)
 
 ## Quirks/gotcha's
 

@@ -20,7 +20,7 @@ While creating this example I stumbled upon an incompatibility between Flask's a
 
 ## Requirements
 
-- Visual Studio Code (Insiders channel is required at this time of writing)
+- Visual Studio Code (Insiders channel is not required anymore at this time of writing)
 
 - [Remote Development Extension]([https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack]()
 
